@@ -1,0 +1,5 @@
+#f4a90d (Amarillo)
+#8c230b (bordo)
+#3d423c (gristopo)
+Letra logo caveat 700
+letra secundaria Monserrat 400

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--GOOGLE FONTS-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Caveat+Brush&family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+   
+   <!--FAVICON-->
+    <link
+      rel="shortcut icon"
+      href="img/favicon/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    
+    <!--ANIMATE CSS-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  
+   <!--CSS-->
+   <link rel="stylesheet" href="../css/Style.css" />
+    <title>Pizza Loca</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+      <button class="nav-toggle" aria-label="abrir navegacion">
+        <span class="hamburger"></span>
+      </button>
+        <div>
+          <a href="" class="logo">
+            <img
+              class="logo1 animate__bounceIn  "
+              src="../img/logos/logopizzaloca1.png "
+              alt=""
+            />
+          </a>  
+          <nav class="nav">
+            <ul class="nav__list nav__list--primary">
+              <li class="nav__item">
+                <a class="nav__link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="nuestraspizzas.html">Nuetras Pizzas</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="comollegar.html">¿Como llegar?<l/a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="Quienessomos.html">Nosotros</a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+    </div>
+    </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <h2 class="h2__pedido">Realizá tu pedido</h2>
+        <div class="form">
+          <form action="">
+            <fieldset>
+              <legend></legend>
+              <label for="nombre">Nombre:</label>
+              <input type="text" name="nombre" id="nombre" />
+              <br />
+              <label for="apellido">Apellido:</label>
+              <input type="text" name="apellido" id="apellido" />
+              <br />
+              <label for="telefono">Teléfono:</label>
+              <input type="text" name="telefono" id="telefono" />
+              <br />
+              <label for="promos">Elegí la pizza deseada</label>
+              <select name="promos" id="promos">
+                <option value="promo1">Muzzarella</option>
+                <option value="promo2">Tomate y Albahaca</option>
+                <option value="promo3">Rucula y Jamón Ibérico</option>
+                <option value="promo4">Pepperoni</option>
+                <option value="promo5">Fugazzetta</option>
+              </select>
+              <br />
+              <label for="mensaje"
+                >En caso de querer mas de una pizza, realizá tu pedido
+                aca:</label
+              >
+              <br />
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <br />
+              <input type="submit" value="Enviar pedido" />
+              <input type="reset" value="Borrar pedido" />
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <h3>Buscanos en las redes</h3>
+        <div class="redes">
+          <a
+            href="https://wa.me/+541166313003/?text=¡Hola!%20¿Cómo%20estás?%20Quiero%20hacer%20una%20consulta."
+            ><img class="redes__wzp" src="../img/logos/logowzp.png" alt=""
+          /></a>
+          <a href="https://www.instagram.com/marolatrecchiana/?hl=es-la  ">
+            <img class="redes__ig" src="../img/logos/logoig.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
