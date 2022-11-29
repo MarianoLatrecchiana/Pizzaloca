@@ -4,115 +4,151 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
     <!--GOOGLE FONTS-->
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat&family=Caveat+Brush&family=Montserrat:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-   
-   <!--FAVICON-->
+
+    <!--FAVICON-->
     <link
       rel="shortcut icon"
       href="../img/favicon/favicon-32x32.png"
       type="image/x-icon"
     />
-    
+
     <!--ANIMATE CSS-->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  
-   <!--CSS-->
-   <link rel="stylesheet" href="../css/Style.css" />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/Style.css" />
     <title>Pizza Loca</title>
   </head>
   <body>
     <header>
       <div class="container">
-        <div class="row">
-      <button class="nav-toggle" aria-label="abrir navegacion">
-        <span class="hamburger"></span>
-      </button>
-        <div>
-          <a href="" class="logo">
-            <img
-              class="logo1 animate__bounceIn  "
-              src="../img/logos/logopizzaloca1.png "
-              alt=""
-            />
-          </a>  
-          <nav class="nav">
-            <ul class="nav__list nav__list--primary">
-              <li class="nav__item">
-                <a class="nav__link" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="nuestraspizzas.html">Nuetras Pizzas</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="comollegar.html">¿Como llegar?<l/a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="Quienessomos.html">Nosotros</a>
-              </li>
-            </ul>
-          </nav>
+        <nav class="navbar bg-red fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="../index.html"
+                      >Inicio</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Pages/quienessomos.html"
+                      >¿Quienes Somos?</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Pages/nuestraspizzas.html"
+                      >Nuestas Pizzas</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Contacto
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="../Pages/comollegar.html"
+                          >Nuestra ubicación</a
+                        >
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
-    </div>
-    </div>
     </header>
 
-    <main class="main">
-      <div class="container">
-      <section>
-        <h2 class="h2__pedido">Realizá tu pedido</h2>
-        <img class="img__form" src="../img/fondoformulario.jpg" alt="">
-        <div class="formulario">
-          <form action="">
-            <fieldset>
-              <label for="nombre">Nombre:</label>
-              <input type="text" name="nombre" id="nombre" />
-              <br />
-              <label for="apellido">Apellido:</label>
-              <input type="text" name="apellido" id="apellido" />
-              <br />
-              <label for="telefono">Teléfono:</label>
-              <input type="text" name="telefono" id="telefono" />
-              <br />
-              <label for="promos">Elegí la pizza deseada</label>
-              <select name="promos" id="promos">
-                <option value="promo1">Muzzarella</option>
-                <option value="promo2">Tomate y Albahaca</option>
-                <option value="promo3">Rucula y Jamón Ibérico</option>
-                <option value="promo4">Fugazzetta de Pepperoni</option>
-                <option value="promo5">Fugazzetta</option>
-              </select>
-              <br />
-              <label for="mensaje"
-                >En caso de querer mas de una pizza, realizá tu pedido
-                aca:</label
-              >
-              <br />
-              <textarea
-                name="mensaje"
-                id="mensaje"
-                cols="30"
-                rows="10"
-              ></textarea>
-              <br />
-              <input type="submit" value="Enviar pedido" />
-              <input type="reset" value="Borrar pedido" />
-            </fieldset>
-          </form>
-        </div>
-      </section>
-    </div>
+    <main class="main6">
+      <h2 class="h2__pedido">Realizá tu pedido</h2>
+      <div>
+        <video
+          class="video__pedido"
+          src="../img/videocontacto.mp4"
+          autoplay
+          loop
+          muted
+        ></video>
+      </div>
+      <div>
+        <form action="">
+          <p>Nombre:</p>
+          <input type="text" class="field" /> <br />
+
+          <p>Dirección:</p>
+          <input type="text" class="field" /> <br />
+
+          <p>Teléfono:</p>
+          <input type="text" class="field" /> <br />
+
+          <p>Pedido:</p>
+          <textarea class="field1"></textarea> <br />
+
+          <p class="center-content">
+            <input type="submit" class="btn btn-green" value="Enviar Pedido" />
+          </p>
+        </form>
+      </div>
     </main>
+
     <footer>
       <div class="container">
+        <h3>Hablemos por Whatsapp / Buscanos en Instagram</h3>
         <div class="redes">
-          <h3>Hablemos por Whatsapp / Buscanos en Instagram</h3>
           <a
             href="https://wa.me/+541166313003/?text=¡Hola!%20¿Cómo%20estás?%20Quiero%20hacer%20una%20consulta."
             ><img class="redes__wzp" src="../img/logos/logowzp.png" alt=""
@@ -123,6 +159,11 @@
         </div>
       </div>
     </footer>
-    <script src="../js/main.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
