@@ -1,0 +1,84 @@
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 50px;
+  }
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5px;
+  }
+  h3 {
+    font-size: 12px;
+    text-align: center;
+  }
+  .redes__wzp {
+    width: 40px;
+  }
+  .redes__ig {
+    width: 35px;
+  }
+
+  .h2__historia {
+    margin-top: 80px;
+    color: black;
+    font-size: 2rem;
+  }
+  .p {
+    font-size: 1rem;
+    color: #000;
+  }
+  .main4 {
+    height: 2700px;
+  }
+  .video__pizzas {
+    height: 2700px;
+  }
+  .h2__pizzas {
+    margin-top: 50px;
+    color: black;
+    font-size: 2rem;
+  }
+  .h2__ubicacion {
+    margin-top: 80px;
+    color: black;
+    font-size: 2rem;
+  }
+  .mapa {
+    width: 100%;
+    height: 280px;
+  }
+  .video__ubicacion {
+    height: 1000px;
+  }
+  .main6 {
+    height: 600px;
+  }
+  .h2__pedido {
+    margin-top: 20px;
+    color: black;
+    font-size: 2rem;
+  }
+  .video__pedido {
+    height: 1000px;
+  }
+  form {
+    border-radius: 5px;
+    font-size: 0.8rem;
+    padding: 2px;
+    margin: 0 auto;
+    width: 300px;
+    margin-top: 10px;
+    height: 500px;
+    text-align: center;
+    opacity: 0.8;
+  }
+  .btn {
+    width: 100px;
+    height: 35px;
+    font-size: 0.7rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,100 @@
+.main4 {
+  height: 1100px;
+}
+
+.h2__pizzas {
+  color: black;
+  font-size: 5rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 50px;
+}
+.video__pizzas {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -3;
+  width: 100%;
+  height: 1100px;
+  overflow: hidden;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.pizzas__divflex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-top: 100px;
+  opacity: 1;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 330px;
+  margin: 10px 10px 50px 10px;
+  background-color: #8c230b;
+}
+
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 20px 50px #000;
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+  }
+  h5 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 40px;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+  }
+}
+
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: #f4a90d;
+  padding: 15px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 20px 50px #000;
+  h5 {
+    font-size: 20px;
+    margin-top: 80px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+}
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}

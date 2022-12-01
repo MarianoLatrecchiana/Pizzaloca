@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(#f4a90d, #8c230b, #3d423c);
@@ -24,17 +25,20 @@ footer {
   background-color: #3d423c;
   height: 100px;
 }
+
 h3 {
   text-align: center;
   font-size: 15px;
   color: #f4a90d;
   font-style: initial;
 }
+
 .redes {
   display: flex;
   background-position: center;
   justify-content: center;
 }
+
 .redes__wzp {
   justify-items: center;
   align-items: center;
@@ -44,7 +48,6 @@ h3 {
   width: 50px;
   top: 20px;
 }
-
 .redes__wzp:hover {
   opacity: 1;
   color: #8c230b;
@@ -65,7 +68,6 @@ h3 {
   color: #8c230b;
 }
 
-/* INDEX*/
 .main {
   height: 603px;
 }
@@ -74,6 +76,7 @@ h3 {
   display: flex;
   flex-direction: column;
 }
+
 h1 {
   font-size: 6rem;
   font-family: "Caveat", cursive;
@@ -84,6 +87,7 @@ h1 {
   color: #f4a90d;
   text-align: center;
 }
+
 h2 {
   color: black;
   font-size: 1.8rem;
@@ -93,6 +97,7 @@ h2 {
   left: 600px;
   overflow: hidden;
 }
+
 .video__index {
   position: absolute;
   top: 0%;
@@ -106,7 +111,6 @@ h2 {
   max-width: 100%;
 }
 
-/* QUIENES SOMOS*/
 .main2 {
   height: 603px;
 }
@@ -121,6 +125,7 @@ h2 {
   overflow: hidden;
   margin-top: 80px;
 }
+
 .p {
   font-size: 1.4rem;
   font-family: "Montserrat", sans-serif;
@@ -129,6 +134,7 @@ h2 {
   font-weight: bolder;
   color: #000;
 }
+
 .video__historia {
   position: absolute;
   top: 0%;
@@ -140,8 +146,6 @@ h2 {
   object-fit: cover;
   opacity: 0.5;
 }
-
-/* NUESTRAS PIZZAS*/
 
 .main4 {
   height: 1100px;
@@ -155,6 +159,7 @@ h2 {
   overflow: hidden;
   padding-top: 50px;
 }
+
 .video__pizzas {
   position: absolute;
   top: 0%;
@@ -183,7 +188,7 @@ h2 {
   width: 300px;
   height: 330px;
   margin: 10px 10px 50px 10px;
-  background-color: #f4a90d;
+  background-color: #8c230b;
 }
 
 .card .face {
@@ -191,7 +196,7 @@ h2 {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 10px;
+  border-radius: 3px;
   overflow: hidden;
   transition: 0.5s;
 }
@@ -200,7 +205,6 @@ h2 {
   transform: perspective(600px) rotateY(0deg);
   box-shadow: 0 20px 50px #000;
 }
-
 .card .front img {
   position: absolute;
   width: 100%;
@@ -208,7 +212,6 @@ h2 {
   object-fit: cover;
   opacity: 1;
 }
-
 .card .front h5 {
   position: absolute;
   bottom: 0;
@@ -231,7 +234,6 @@ h2 {
   text-align: center;
   box-shadow: 0 20px 50px #000;
 }
-
 .card .back h5 {
   font-size: 20px;
   margin-top: 80px;
@@ -247,8 +249,6 @@ h2 {
   transform: perspective(600px) rotateY(360deg);
 }
 
-/* UBICACION*/
-
 .h2__ubicacion {
   color: black;
   font-size: 5rem;
@@ -257,6 +257,7 @@ h2 {
   overflow: hidden;
   padding-top: 50px;
 }
+
 .video__ubicacion {
   position: absolute;
   top: 0%;
@@ -277,10 +278,10 @@ h2 {
   left: 120px;
 }
 
-/* PEDIDOS*/
 .main6 {
   height: 700px;
 }
+
 .h2__pedido {
   color: black;
   font-size: 5rem;
@@ -302,6 +303,7 @@ h2 {
   opacity: 0.5;
   max-height: 100%;
 }
+
 form {
   background-color: #f4a90d;
   border-radius: 5px;
@@ -329,6 +331,10 @@ textarea {
   width: 280px;
   margin: 0px;
 }
+.fieldfocus {
+  border-color: #8c230b;
+}
+
 .field1 {
   border: solid 1px #3d423c;
   padding: 10px;
@@ -337,14 +343,11 @@ textarea {
   margin: 0px;
 }
 
-.field:focus {
-  border-color: #8c230b;
-}
-
 .center-content {
   text-align: center;
   color: #8c230b;
 }
+
 .btn {
   border-radius: 8px;
   display: inline-block;
@@ -362,9 +365,11 @@ textarea {
   color: #f4a90d;
   background-color: #8c230b;
 }
+
 .btn-green:hover {
   background-color: #8c230b;
 }
+
 .btn-green:active {
   background-color: #8c230b;
 }
@@ -390,7 +395,6 @@ textarea {
   .redes__ig {
     width: 35px;
   }
-
   .h2__historia {
     margin-top: 80px;
     color: black;
@@ -454,16 +458,4 @@ textarea {
   }
 }
 
-/* #f4a90d (Amarillo)
-    #8c230b (bordo)
-    #3d423c (gristopo)
-    font-family: 'Caveat', cursive;
-    font-family: 'Caveat Brush', cursive;
-    font-family: 'Montserrat', sans-serif; 
-
-
-    en secion le ponemos flex y el gap es el espacion entre las cajas 
-
-    placeimg web para darle tamaño a la img
-    make some wabes olas en las imagenes
-    */
+/*# sourceMappingURL=style.css.map */
