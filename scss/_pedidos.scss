@@ -4,7 +4,7 @@
 .h2__pedido {
   color: black;
   font-size: 5rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: $font2;
   text-align: center;
   overflow: hidden;
   padding-top: 50px;
@@ -25,7 +25,7 @@
 form {
   background-color: $color-1;
   border-radius: 5px;
-  color: #8c230b;
+  color: $color-2;
   font-size: 0.8rem;
   padding: 5px;
   margin: 0 auto;
@@ -44,16 +44,16 @@ textarea {
 }
 
 .field {
-  border: solid 1px #3d423c;
+  border: solid 1px $color-3;
   padding: 2px;
   width: 280px;
   margin: 0px;
   &focus {
-    border-color: #8c230b;
+    border-color: $color-2;
   }
 }
 .field1 {
-  border: solid 1px #3d423c;
+  border: solid 1px $color-3;
   padding: 10px;
   width: 280px;
   height: 150px;
@@ -62,7 +62,7 @@ textarea {
 
 .center-content {
   text-align: center;
-  color: #8c230b;
+  color: $color-2;
 }
 .btn {
   border-radius: 8px;
@@ -79,11 +79,11 @@ textarea {
 
 .btn-green {
   color: #f4a90d;
-  background-color: #8c230b;
+  background-color: $color-2;
 }
 .btn-green:hover {
-  background-color: #8c230b;
+  background-color: $color-2;
 }
 .btn-green:active {
-  background-color: #8c230b;
+  background-color: $color-2;
 }
