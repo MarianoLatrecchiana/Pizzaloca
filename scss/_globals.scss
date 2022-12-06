@@ -21,13 +21,13 @@ body {
 }
 
 footer {
-  background-color: #3d423c;
+  background-color: $color-3;
   height: 100px;
 }
 h3 {
   text-align: center;
   font-size: 15px;
-  color: #f4a90d;
+  color: $color-1;
   font-style: initial;
 }
 .redes {
@@ -45,7 +45,7 @@ h3 {
   top: 20px;
   &:hover {
     opacity: 1;
-    color: #8c230b;
+    color: $color-2;
   }
 }
 
@@ -60,6 +60,6 @@ h3 {
   top: 23px;
   &:hover {
     opacity: 1;
-    color: #8c230b;
+    color: $color-2;
   }
 }

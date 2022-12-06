@@ -75,7 +75,7 @@
 
 .card .back {
   transform: perspective(600px) rotateY(180deg);
-  background: #f4a90d;
+  background: $color-1;
   padding: 15px;
   color: black;
   display: flex;
