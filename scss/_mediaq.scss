@@ -13,6 +13,11 @@
     font-size: 12px;
     text-align: center;
   }
+  footer {
+    background-color: $color-3;
+    max-height: 1200px;
+    height: 200px;
+  }
   .redes__wzp {
     width: 40px;
   }
@@ -33,7 +38,7 @@
     height: 2700px;
   }
   .video__pizzas {
-    height: 2700px;
+    height: 2800px;
   }
   .h2__pizzas {
     margin-top: 50px;
@@ -48,6 +53,9 @@
   .mapa {
     width: 100%;
     height: 280px;
+  }
+  .video__index {
+    height: 605px;
   }
   .video__ubicacion {
     height: 1000px;
