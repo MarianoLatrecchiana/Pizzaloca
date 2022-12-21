@@ -3,12 +3,7 @@
 }
 
 .h2__pizzas {
-  color: black;
-  font-size: 5rem;
-  font-family: $font2;
-  text-align: center;
-  overflow: hidden;
-  padding-top: 50px;
+  @include subtitulo;
 }
 .video__pizzas {
   position: absolute;

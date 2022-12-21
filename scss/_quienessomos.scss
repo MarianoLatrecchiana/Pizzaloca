@@ -3,14 +3,7 @@
 }
 
 .h2__historia {
-  color: black;
-  font-size: 5rem;
-  font-family: $font2;
-  text-align: center;
-  top: 200px;
-  left: 600px;
-  overflow: hidden;
-  margin-top: 80px;
+  @include subtitulo;
 }
 .p {
   font-size: 1.4rem;

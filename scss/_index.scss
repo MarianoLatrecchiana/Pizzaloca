@@ -18,16 +18,8 @@ h1 {
   animation: bounce;
   animation-duration: 2s;
 }
-h2 {
-  color: black;
-  font-size: 1.8rem;
-  font-family: $font2;
-  text-align: center;
-  top: 200px;
-  left: 600px;
-  overflow: hidden;
-  animation: bounce;
-  animation-duration: 2s;
+.h2_index {
+  @include subtitulo;
 }
 .video__index {
   position: absolute;
